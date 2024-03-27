@@ -1,0 +1,104 @@
+@import url('./reset.css');
+
+body {
+    display: grid;
+    grid:
+    "header header" 56px
+    "aside main" 1fr
+    / 218px 1fr
+    ;
+}
+
+/* Header */
+.container-header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px 0px 24px
+}
+.youtube-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#form-search {
+    margin: 0;
+    display: flex;
+}
+#form-search > #search {
+    border: solid 1px #CCCCCC;
+    width: 348px;
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+}
+#form-search > button {
+    width: 57px;
+    border: solid 1px #CCCCCC;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+.container-guias {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Siderbar */
+.container-siderbar {
+    grid-area: aside;
+    padding: 24px;
+}
+.itens-siderbar > ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 22px;
+}
+.itens {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Main */
+.container-main {
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1190px;
+    margin: auto;
+}
+.container-videos {
+    display: flex;
+    flex: 1 1 100px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.thumbnail-img {
+    width: 250px;
+    border-radius: 15px;
+}
+.video-details {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 10px;
+    max-width: 250px;
+}
+.channel-avatar {
+    border-radius: 50px;
+}
+.title-video {
+    font-size: 15px;
+    font-weight: 600;
+}
+.title-info {
+    font-size: 14px;
+}
